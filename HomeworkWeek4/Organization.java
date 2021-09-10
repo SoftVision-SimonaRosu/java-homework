@@ -17,16 +17,15 @@ public class Organization {
         removeEmployee(employee2);
     }
 
-    public static UUID uuid = UUID.randomUUID();
     public static List<Employees> employees = new LinkedList<>();
     public static Employees employee1 = new Employees();
     public static Employees employee2 = new Employees();
     public static Employees employee3 = new Employees();
 
     public static void setUpEmployees() {
-        employee1.addEmployees(uuid, "George", 29, "male", "community", "QA"  );
-        employee2.addEmployees(uuid, "Andrei", 34, "male", "delivery", "DEV");
-        employee3.addEmployees(uuid, "Raluca", 31, "female", "HR", "HR");
+        employee1.addEmployees(UUID.randomUUID(), "George", 29, "male", "community", "QA"  );
+        employee2.addEmployees(UUID.randomUUID(), "Andrei", 34, "male", "delivery", "DEV");
+        employee3.addEmployees(UUID.randomUUID(), "Raluca", 31, "female", "HR", "HR");
     }
 
     public static void addEmployeeToList() {
